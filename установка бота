@@ -1,0 +1,25 @@
+Копируем весь проэкт в папку (кроме папки venv).
+
+Необходимо создать в корне аккаунта файл .profile, добавить в него строку
+export PATH=$HOME/.local/bin:$PATH
+После этого нужно разлогиниться и снова подключиться к серверу.
+
+1) wget https://bootstrap.pypa.io/get-pip.py
+2) Устанавливаем утилиту get-pip:
+python3.8 get-pip.py
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+далее устанавливаем зависимости:
+
+requirements.txt (внутри папки с ботом)
+
+вводим команду pip install -r requirements.txt --use-deprecated=legacy-resolver
+
+
+
+kadosh
+Kostyan78
+
